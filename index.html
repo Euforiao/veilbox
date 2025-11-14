@@ -586,23 +586,23 @@
     const yourMail = "justapizzahead@protonmail.com";
 
     // budujemy tekst wiadomości – prosty, konkretny
-    let text  = "Adres, na który wysyłasz maila:\n";
+    let text  = "Address to which you send an email:\n";
     text     += yourMail + "\n\n";
-    text     += "Temat maila: Zamówienie VEILBOX\n\n";
-    text     += "Treść (możesz skopiować wszystko poniżej i wkleić do maila):\n\n";
+    text     += "Email subject: Order VEILBOX\n\n";
+    text     += "Content (you can copy everything below and paste it into the email):\n\n";
 
-    text += "Zamawiam VEILBOX z innego wymiaru.\n\n";
-    text += "Poziom boxa: " + levelInput + "\n";
-    text += "Mój e-mail do odesłania boxa: " + emailInput + "\n";
-    text += "TX hash transakcji USDC (TRC20): " + txInput + "\n";
+    text += "Order VEILBOX from another dimension.\n\n";
+    text += "Box level: " + levelInput + "\n";
+    text += "My Email to Send Back Box: " + emailInput + "\n";
+    text += "TX hash Transaction USDC (TRC20): " + txInput + "\n";
 
     if(noteInput){
-      text += "Notka do boxa: " + noteInput + "\n";
+      text += "Box note: " + noteInput + "\n";
     }else{
-      text += "Notka do boxa: (brak)\n";
+      text += "Box note: (brak)\n";
     }
 
-    text += "\nJeśli coś będzie niejasne, odezwij się do mnie w odpowiedzi na ten mail.justapizzahead@protonmail.com";
+    text += "\nIf something is unclear, please contact me in response to this email.justapizzahead@protonmail.com";
 
     // wstawiamy tekst do pola readonly
     const generated = document.getElementById('generatedMail');
